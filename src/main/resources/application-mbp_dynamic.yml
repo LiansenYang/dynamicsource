@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        master0:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/sharding-jdbc0?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          username: root
+          password: root
+        master1:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/sharding-jdbc1?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+          username: root
+          password: root
+
+        #primary: master0  数据源名称。默认是master
